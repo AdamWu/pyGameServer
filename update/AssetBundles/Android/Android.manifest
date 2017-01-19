@@ -1,0 +1,12 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: box
+      Dependencies: {}
+    Info_1:
+      Name: cfg
+      Dependencies: {}
+    Info_2:
+      Name: prefabs/panel alert
+      Dependencies: {}

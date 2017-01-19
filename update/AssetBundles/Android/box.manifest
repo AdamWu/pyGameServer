@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 4194234315
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7a073d5c42f8d019e2ce4d80c6d0dbd0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e50f2022e9fc1ece3b0077d55fd2f2aa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f3b01d4a675e7fd4c9521c747583f801, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/Box.prefab
+Dependencies: []
