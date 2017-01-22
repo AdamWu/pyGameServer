@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1944851097
+CRC: 1111888758
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8d984b5d904293df43e9e0f55bc54bbb
+    Hash: 448c361b38b0295ff87a47d2f25fcbfa
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1033bf7ddfd4c6d43e7a6382c0a0a61a
@@ -12,6 +12,7 @@ ClassTypes:
 - Class: 49
   Script: {instanceID: 0}
 Assets:
+- Assets/Resources/Cfg/skills.txt
 - Assets/Resources/Cfg/equips.txt
 - Assets/Resources/Cfg/items.txt
 Dependencies: []

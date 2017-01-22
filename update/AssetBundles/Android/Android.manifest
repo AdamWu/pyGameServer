@@ -8,5 +8,5 @@ AssetBundleManifest:
       Name: cfg
       Dependencies: {}
     Info_2:
-      Name: prefabs/panel alert
+      Name: ui/panelalert
       Dependencies: {}
