@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4284359900
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 30bd034175a39063ad5e558f0182b381
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1094ce4a8b63a0cc7870d736bb694a93
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/Shaders/UnlitColorTexture.shader
+Dependencies: []

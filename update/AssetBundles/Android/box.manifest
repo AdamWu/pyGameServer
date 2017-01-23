@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2622425767
+CRC: 3609911356
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d6886273450f3d71e1c1b6219bf43337
+    Hash: 2f09b037e793d40d1587d22377a28526
   TypeTreeHash:
     serializedVersion: 2
-    Hash: e50f2022e9fc1ece3b0077d55fd2f2aa
+    Hash: ae8012009ff397452da9ade1b0cd0af0
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -17,13 +17,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 23
   Script: {instanceID: 0}
-- Class: 28
-  Script: {instanceID: 0}
 - Class: 33
   Script: {instanceID: 0}
 - Class: 43
-  Script: {instanceID: 0}
-- Class: 48
   Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
@@ -33,4 +29,5 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Resources/Prefabs/Box.prefab
-Dependencies: []
+Dependencies:
+- AssetBundles/Android/material

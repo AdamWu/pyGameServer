@@ -3,10 +3,18 @@ AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: box
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: material
     Info_1:
       Name: cfg
       Dependencies: {}
     Info_2:
       Name: ui/panelalert
       Dependencies: {}
+    Info_3:
+      Name: shader
+      Dependencies: {}
+    Info_4:
+      Name: material
+      Dependencies:
+        Dependency_0: shader
