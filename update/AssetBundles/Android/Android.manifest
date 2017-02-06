@@ -2,19 +2,19 @@ ManifestFileVersion: 0
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: box
-      Dependencies:
-        Dependency_0: material
-    Info_1:
       Name: cfg
       Dependencies: {}
-    Info_2:
+    Info_1:
       Name: ui/panelalert
       Dependencies: {}
-    Info_3:
+    Info_2:
       Name: shader
       Dependencies: {}
-    Info_4:
+    Info_3:
       Name: material
       Dependencies:
         Dependency_0: shader
+    Info_4:
+      Name: prefabs/box
+      Dependencies:
+        Dependency_0: material
