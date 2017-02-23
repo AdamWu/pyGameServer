@@ -1,0 +1,5 @@
+
+message LoginRequest {
+	required string name = 1;
+	required string pwd = 2;
+}

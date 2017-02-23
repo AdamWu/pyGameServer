@@ -6,25 +6,14 @@ import time
 import sys
 from ByteArray import *
 
+# proto
+from proto import logic_pb2
+from proto import main_pb2
+
 REQ_LOGIN = 1001
 ACK_LOGIN = 1002
 REQ_ENTER = 1003
 ACK_ENTER = 1004
-
-def caculate_length(info):
-    a={'i':4,'s':1,'h':2,'H':2,'d':8,'f':4}
-    b=[]
-    for i in info:
-       if i in a:
-           b.append(a[i])
-       elif i.isdigit():
-           b.append(int(i)-1)
-
-    x=0
-    for i in b:
-        i=i+x
-        x=i
-    return x
 
 gSessionList = {}
 gUserCount = 0
@@ -69,36 +58,41 @@ class MyHandler(SocketServer.BaseRequestHandler):
                                 if len(data) >= 2:
                                         dataLength = struct.unpack('!H', data[0:2])[0]
 
-        def ct2st(ct): # client time to server time
-                return ct + self._timeDelta
-
-
         # 处理数据
-        def handleData(self, bArray):
-                key = bArray.readUShort()
+        def handleData(self, byteArray):
+                key = byteArray.ReadUShort()
                 print 'handleData', key
                 if key == REQ_LOGIN:
-                        self.onLogin(bArray.readString(), bArray.readString())
+                        self.onLogin(byteArray)
                 elif key == REQ_ENTER:
-                        self.onEnter()
+                        self.onEnter(byteArray)
 
         def sendData(self, data):
                 form='!H'+str(len(data))+'s'
                 self.request.sendall(struct.pack(form, len(data), data))
 
-        def onLogin(self, name, pwd):
-                print 'onLogin', name, pwd
+        def onLogin(self, byteArray):
+                login = logic_pb2.LoginRequest()
+                login.ParseFromString(byteArray.ReadBytes())
+                print 'onLogin', login.name, login.pwd
                 global gUserCount
                 gUserCount = gUserCount + 1
                 self._userid = gUserCount
                 gSessionList[self._userid] = self
+
+                user = main_pb2.User()
+                user.id = str(self._userid)
+                user.name = login.name
+                user.lv = 10
+                user.exp = 200
+                user.cash = 30
+                user.coin = 12390
+                data = user.SerializeToString()
                 byteData = struct.pack('!H', ACK_LOGIN)
-                byteData += struct.pack('!i', self._userid)
-                byteData += struct.pack('!H'+str(len(name))+'s', len(name), name)
-                byteData += struct.pack('!f', 12.9)
+                byteData += struct.pack('!H'+str(len(data))+'s', len(data), data)
                 self.sendData(byteData)
 
-        def onEnter(self):
+        def onEnter(self, byteArray):
                 print 'onEnter'
                 byteData = struct.pack('!H', ACK_ENTER)
                 self.sendData(byteData)

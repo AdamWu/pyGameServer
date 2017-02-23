@@ -1,0 +1,20 @@
+message Item{
+	required int32 id = 1; 
+	required int32 num = 2;
+}
+
+message Equip{
+	required int32 id = 1;
+	required int32 baseId = 2; // cfg id
+}
+
+message User{
+	required string id = 1;
+	required string name = 2;
+	required int32 lv = 3;
+	required int32 exp = 4;
+	required int32 cash = 5;
+	required int32 coin = 6;
+	repeated Item item = 7;
+	repeated Equip equip = 8;
+}

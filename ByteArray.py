@@ -7,7 +7,7 @@ class ByteArray:
         self.pos = 0
         self.length = len(data)
 
-    def readByte(self):
+    def ReadByte(self):
         newPos = self.pos + 1
         if newPos <= self.length:
             value = struct.unpack('!b', self.data[self.pos:newPos])
@@ -16,7 +16,7 @@ class ByteArray:
         else:
             print 'index out of boundary'
 
-    def readShort(self):
+    def ReadShort(self):
         newPos = self.pos + 2
         if newPos <= self.length:
             value = struct.unpack('!h', self.data[self.pos:newPos])
@@ -25,7 +25,7 @@ class ByteArray:
         else:
             print 'index out of boundary'
 
-    def readUShort(self):
+    def ReadUShort(self):
         newPos = self.pos + 2
         if newPos <= self.length:
             value = struct.unpack('!H', self.data[self.pos:newPos])
@@ -34,7 +34,7 @@ class ByteArray:
         else:
             print 'index out of boundary'
 
-    def readInt(self):
+    def ReadInt(self):
         newPos = self.pos + 4
         if newPos <= self.length:
             value = struct.unpack('!i', self.data[self.pos:newPos])
@@ -43,7 +43,7 @@ class ByteArray:
         else:
             print 'index out of boundary'
 
-    def readFloat(self):
+    def ReadFloat(self):
         newPos = self.pos + 4
         if newPos <= self.length:
             value = struct.unpack('!f', self.data[self.pos:newPos])
@@ -52,7 +52,7 @@ class ByteArray:
         else:
             print 'index out of boundary'
 
-    def readDouble(self):
+    def ReadDouble(self):
         newPos = self.pos + 8
         if newPos <= self.length:
             value = struct.unpack('!d', self.data[self.pos:newPos])
@@ -61,7 +61,7 @@ class ByteArray:
         else:
             print 'index out of boundary'
 
-    def readString(self):
+    def ReadString(self):
         newPos=self.pos + 2
         if newPos<=self.length:
             stringLength=struct.unpack('!H',self.data[self.pos:newPos])[0]
@@ -72,7 +72,7 @@ class ByteArray:
         else:
             print 'index out of boundary'
 
-    def readBytes(self):
+    def ReadBytes(self):
         newPos=self.pos + 2
         if newPos<=self.length:
             stringLength=struct.unpack('!H',self.data[self.pos:newPos])[0]
