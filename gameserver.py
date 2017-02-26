@@ -10,10 +10,13 @@ from ByteArray import *
 from proto import logic_pb2
 from proto import main_pb2
 
-REQ_LOGIN = 1001
-ACK_LOGIN = 1002
-REQ_ENTER = 1003
-ACK_ENTER = 1004
+REQ_LOGIN = 1000
+ACK_LOGIN = 1001
+REQ_ENTER = 1002
+ACK_ENTER = 1003
+
+REQ_SELL = 1100
+ACK_SELL = 1101
 
 gSessionList = {}
 gUserCount = 0
@@ -66,6 +69,8 @@ class MyHandler(SocketServer.BaseRequestHandler):
                         self.onLogin(byteArray)
                 elif key == REQ_ENTER:
                         self.onEnter(byteArray)
+                elif key == REQ_SELL:
+                        self.onSell(byteArray)
 
         def sendData(self, data):
                 form='!H'+str(len(data))+'s'
@@ -95,6 +100,13 @@ class MyHandler(SocketServer.BaseRequestHandler):
         def onEnter(self, byteArray):
                 print 'onEnter'
                 byteData = struct.pack('!H', ACK_ENTER)
+                self.sendData(byteData)
+
+        def onSell(self, byteArray):
+                id = byteArray.ReadInt()
+                print 'onSell', id
+                byteData = struct.pack('!H', ACK_SELL)
+                byteData += struct.pack('!i', id)
                 self.sendData(byteData)
 
 
