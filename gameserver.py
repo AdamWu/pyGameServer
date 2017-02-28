@@ -4,11 +4,25 @@ import SocketServer
 import struct
 import time
 import sys
+import json
 from ByteArray import *
 
 # proto
 from proto import logic_pb2
 from proto import main_pb2
+
+
+CFG = {}
+CFG['items'] = {}
+CFG['equips'] = {}
+data = json.load(file('cfg/item.json'))
+for item in data:
+        CFG['items'][item['id']] = item
+data = json.load(file('cfg/equip.json'))
+for item in data:
+        CFG['equips'][item['id']] = item
+
+
 
 REQ_LOGIN = 1000
 ACK_LOGIN = 1001
@@ -92,6 +106,9 @@ class MyHandler(SocketServer.BaseRequestHandler):
                 user.exp = 200
                 user.cash = 30
                 user.coin = 12390
+                for id in CFG['items']:
+                        if id >= 100:        
+                                user.item.add(id=id, num=1000)
                 data = user.SerializeToString()
                 byteData = struct.pack('!H', ACK_LOGIN)
                 byteData += struct.pack('!H'+str(len(data))+'s', len(data), data)
