@@ -7,6 +7,8 @@ import sys
 import json
 from ByteArray import *
 
+from protocol import *
+
 # proto
 from proto import logic_pb2
 from proto import main_pb2
@@ -16,21 +18,12 @@ CFG = {}
 CFG['items'] = {}
 CFG['equips'] = {}
 data = json.load(file('cfg/item.json'))
-for item in data:
-        CFG['items'][item['id']] = item
+for id in data:
+        CFG['items'][int(id)] = data[id]
 data = json.load(file('cfg/equip.json'))
-for item in data:
-        CFG['equips'][item['id']] = item
+for id in data:
+        CFG['equips'][int(id)] = data[id]
 
-
-
-REQ_LOGIN = 1000
-ACK_LOGIN = 1001
-REQ_ENTER = 1002
-ACK_ENTER = 1003
-
-REQ_SELL = 1100
-ACK_SELL = 1101
 
 gSessionList = {}
 gUserCount = 0
