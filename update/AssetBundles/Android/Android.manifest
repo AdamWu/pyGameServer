@@ -1,0 +1,591 @@
+ManifestFileVersion: 0
+CRC: 4263040866
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ui/panelmenu
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_1:
+      Name: ui/panelalert
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_2:
+      Name: ui/panellogin
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_3:
+      Name: prefabs/box
+      Dependencies:
+        Dependency_0: materials/colortexmaterial
+    Info_4:
+      Name: localization/zh-cn
+      Dependencies: {}
+    Info_5:
+      Name: icon/115015
+      Dependencies: {}
+    Info_6:
+      Name: icon/115011
+      Dependencies: {}
+    Info_7:
+      Name: icon/1002
+      Dependencies: {}
+    Info_8:
+      Name: icon/42024
+      Dependencies: {}
+    Info_9:
+      Name: icon/42022
+      Dependencies: {}
+    Info_10:
+      Name: icon/42025
+      Dependencies: {}
+    Info_11:
+      Name: icon/42023
+      Dependencies: {}
+    Info_12:
+      Name: icon/114011
+      Dependencies: {}
+    Info_13:
+      Name: icon/42021
+      Dependencies: {}
+    Info_14:
+      Name: icon/111013
+      Dependencies: {}
+    Info_15:
+      Name: icon/114015
+      Dependencies: {}
+    Info_16:
+      Name: icon/44054
+      Dependencies: {}
+    Info_17:
+      Name: icon/1001
+      Dependencies: {}
+    Info_18:
+      Name: icon/44012
+      Dependencies: {}
+    Info_19:
+      Name: icon/111011
+      Dependencies: {}
+    Info_20:
+      Name: icon/114014
+      Dependencies: {}
+    Info_21:
+      Name: icon/44033
+      Dependencies: {}
+    Info_22:
+      Name: icon/112011
+      Dependencies: {}
+    Info_23:
+      Name: icon/44061
+      Dependencies: {}
+    Info_24:
+      Name: icon/116011
+      Dependencies: {}
+    Info_25:
+      Name: icon/44026
+      Dependencies: {}
+    Info_26:
+      Name: icon/112021
+      Dependencies: {}
+    Info_27:
+      Name: icon/44042
+      Dependencies: {}
+    Info_28:
+      Name: icon/116013
+      Dependencies: {}
+    Info_29:
+      Name: icon/0
+      Dependencies: {}
+    Info_30:
+      Name: icon/42026
+      Dependencies: {}
+    Info_31:
+      Name: icon/116015
+      Dependencies: {}
+    Info_32:
+      Name: prefabs/scene/wall1_debris3
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_33:
+      Name: prefabs/scene/wall1_debris1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_34:
+      Name: prefabs/scene/up6
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_35:
+      Name: prefabs/scene/wall1_debris2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_36:
+      Name: prefabs/scene/wall1a_3m
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_37:
+      Name: prefabs/scene/wall2_courner1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_38:
+      Name: prefabs/scene/pav_debris5
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_39:
+      Name: prefabs/scene/wall3_el1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_40:
+      Name: prefabs/scene/up2a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_41:
+      Name: prefabs/scene/pav_debris8
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_42:
+      Name: prefabs/scene/chest1a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_43:
+      Name: prefabs/scene/blocker_wall5
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+        Dependency_1: materials/scene/atlas2
+    Info_44:
+      Name: ui/panelequip
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_45:
+      Name: prefabs/scene/wall3_el2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_46:
+      Name: prefabs/scene/barrel2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_47:
+      Name: prefabs/character/king
+      Dependencies:
+        Dependency_0: animation/kingcontroller
+    Info_48:
+      Name: prefabs/scene/ground4d
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_49:
+      Name: prefabs/scene/pav_debris4
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_50:
+      Name: prefabs/scene/wall3_el3
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_51:
+      Name: ui/paneltip
+      Dependencies: {}
+    Info_52:
+      Name: prefabs/scene/wall1a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_53:
+      Name: prefabs/scene/bucket1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_54:
+      Name: prefabs/scene/wall2a_3m
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_55:
+      Name: prefabs/scene/pav_debris7
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_56:
+      Name: prefabs/scene/enter2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_57:
+      Name: prefabs/scene/torch1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_58:
+      Name: ui/panelbag
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_59:
+      Name: prefabs/scene/courner2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_60:
+      Name: prefabs/scene/furnace3
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_61:
+      Name: prefabs/scene/pav_debris2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_62:
+      Name: prefabs/scene/catacomb4
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_63:
+      Name: ui/panelmain
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_64:
+      Name: prefabs/scene/ground4e
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_65:
+      Name: prefabs/scene/catacomb3
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_66:
+      Name: prefabs/scene/ledge2a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_67:
+      Name: prefabs/scene/wall1_brick13
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_68:
+      Name: prefabs/scene/beam_combo1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+        Dependency_1: materials/scene/atlas2
+    Info_69:
+      Name: prefabs/scene/wall2b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_70:
+      Name: prefabs/scene/catacomb1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_71:
+      Name: prefabs/scene/up5
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_72:
+      Name: prefabs/scene/passage1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_73:
+      Name: prefabs/scene/furnace1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_74:
+      Name: prefabs/scene/blocker_wall5_courner
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+        Dependency_1: materials/scene/atlas2
+    Info_75:
+      Name: prefabs/scene/wall2_courner2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_76:
+      Name: prefabs/scene/furnace2a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_77:
+      Name: prefabs/scene/ledge1b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_78:
+      Name: prefabs/scene/blocker_wall10x
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_79:
+      Name: prefabs/scene/up1b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_80:
+      Name: prefabs/scene/barrels2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_81:
+      Name: prefabs/scene/furnace3b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_82:
+      Name: prefabs/scene/ground3b
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_83:
+      Name: prefabs/scene/chest1b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_84:
+      Name: prefabs/scene/cloth1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_85:
+      Name: ui/panelupdate
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_86:
+      Name: prefabs/scene/wall2a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_87:
+      Name: prefabs/scene/blocker_wall2_5x
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_88:
+      Name: prefabs/scene/wall1_column2a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_89:
+      Name: prefabs/scene/blocker_wall5x
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_90:
+      Name: prefabs/scene/pav_debris6
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_91:
+      Name: ui/panelwait
+      Dependencies: {}
+    Info_92:
+      Name: prefabs/scene/cargo1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_93:
+      Name: prefabs/scene/wall1_column2c
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_94:
+      Name: prefabs/scene/wall1_debris4
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_95:
+      Name: prefabs/scene/barrels1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_96:
+      Name: prefabs/scene/ground4a
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_97:
+      Name: prefabs/scene/courner1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_98:
+      Name: prefabs/scene/ground1a
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_99:
+      Name: prefabs/scene/ground1b
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_100:
+      Name: ui/panelitemdetail
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_101:
+      Name: prefabs/scene/ground3a
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_102:
+      Name: prefabs/scene/furnace3c
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_103:
+      Name: prefabs/scene/chest2b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_104:
+      Name: prefabs/scene/ground2a
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_105:
+      Name: prefabs/scene/cargo2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_106:
+      Name: prefabs/scene/barrels3
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+        Dependency_1: materials/scene/atlas2
+    Info_107:
+      Name: prefabs/scene/catacomb2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_108:
+      Name: prefabs/scene/up1a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_109:
+      Name: prefabs/scene/pav_debris9
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_110:
+      Name: prefabs/scene/blocker_wall5b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+        Dependency_1: materials/scene/atlas2
+    Info_111:
+      Name: prefabs/mobilesinglestickcontrol
+      Dependencies: {}
+    Info_112:
+      Name: ui/panelbattle
+      Dependencies:
+        Dependency_0: animation/btn
+    Info_113:
+      Name: prefabs/scene/wall3_el4
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_114:
+      Name: prefabs/scene/barrel1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_115:
+      Name: prefabs/scene/blocker_wall4
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_116:
+      Name: prefabs/scene/ground4b
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_117:
+      Name: prefabs/scene/pav_debris1
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_118:
+      Name: animation/attack_move_fix
+      Dependencies: {}
+    Info_119:
+      Name: prefabs/scene/ground3c
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+        Dependency_1: materials/scene/atlas2
+    Info_120:
+      Name: ui/widget/bagitem
+      Dependencies: {}
+    Info_121:
+      Name: prefabs/scene/up2b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_122:
+      Name: prefabs/scene/ground4c
+      Dependencies:
+        Dependency_0: materials/scene/atlas2
+    Info_123:
+      Name: prefabs/scene/pav_debris3
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_124:
+      Name: prefabs/scene/blocker_wall3
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_125:
+      Name: prefabs/scene/wall1_column2b
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_126:
+      Name: prefabs/scene/chest2a
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_127:
+      Name: prefabs/scene/box2
+      Dependencies:
+        Dependency_0: materials/scene/atlas1
+    Info_128:
+      Name: cfg/equip
+      Dependencies: {}
+    Info_129:
+      Name: cfg/item
+      Dependencies: {}
+    Info_130:
+      Name: animation/kingcontroller
+      Dependencies: {}
+    Info_131:
+      Name: animation/btn
+      Dependencies: {}
+    Info_132:
+      Name: dotweensettings
+      Dependencies: {}
+    Info_133:
+      Name: lua_cjson.unity3d
+      Dependencies: {}
+    Info_134:
+      Name: lua_controller.unity3d
+      Dependencies: {}
+    Info_135:
+      Name: lua_core.unity3d
+      Dependencies: {}
+    Info_136:
+      Name: lua_lpeg.unity3d
+      Dependencies: {}
+    Info_137:
+      Name: lua_misc.unity3d
+      Dependencies: {}
+    Info_138:
+      Name: lua_model.unity3d
+      Dependencies: {}
+    Info_139:
+      Name: lua_network.unity3d
+      Dependencies: {}
+    Info_140:
+      Name: lua_proto.unity3d
+      Dependencies: {}
+    Info_141:
+      Name: lua_protobuf.unity3d
+      Dependencies: {}
+    Info_142:
+      Name: lua_scene.unity3d
+      Dependencies: {}
+    Info_143:
+      Name: lua_socket.unity3d
+      Dependencies: {}
+    Info_144:
+      Name: lua_system.unity3d
+      Dependencies: {}
+    Info_145:
+      Name: lua_unityengine.unity3d
+      Dependencies: {}
+    Info_146:
+      Name: lua_window.unity3d
+      Dependencies: {}
+    Info_147:
+      Name: lua_system_reflection.unity3d
+      Dependencies: {}
+    Info_148:
+      Name: lua.unity3d
+      Dependencies: {}
+    Info_149:
+      Name: sprite/public/bg_1
+      Dependencies: {}
+    Info_150:
+      Name: sprite/public/bg_t1
+      Dependencies: {}
+    Info_151:
+      Name: sprite/public/btn_1
+      Dependencies: {}
+    Info_152:
+      Name: sprite/public/btn_2
+      Dependencies: {}
+    Info_153:
+      Name: sprite/public/btn_close
+      Dependencies: {}
+    Info_154:
+      Name: sprite/public/item_q_1
+      Dependencies: {}
+    Info_155:
+      Name: sprite/public/item_q_2
+      Dependencies: {}
+    Info_156:
+      Name: sprite/public/item_q_3
+      Dependencies: {}
+    Info_157:
+      Name: sprite/public/item_q_4
+      Dependencies: {}
+    Info_158:
+      Name: sprite/public/item_q_5
+      Dependencies: {}
+    Info_159:
+      Name: materials/colortexmaterial
+      Dependencies: {}
+    Info_160:
+      Name: materials/scene/atlas1
+      Dependencies: {}
+    Info_161:
+      Name: materials/scene/atlas2
+      Dependencies: {}
