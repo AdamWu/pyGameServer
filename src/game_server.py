@@ -5,22 +5,23 @@ import struct
 import time
 import sys
 import json
-from ByteArray import *
 
-from protocol import *
+from config import *
+
+from network import *
 
 # proto
-from proto import logic_pb2
-from proto import main_pb2
+from pb2 import logic_pb2
+from pb2 import main_pb2
 
 
 CFG = {}
 CFG['items'] = {}
 CFG['equips'] = {}
-data = json.load(file('cfg/item.json'))
+data = json.load(file('../cfg/item.json'))
 for id in data:
         CFG['items'][int(id)] = data[id]
-data = json.load(file('cfg/equip.json'))
+data = json.load(file('../cfg/equip.json'))
 for id in data:
         CFG['equips'][int(id)] = data[id]
 
@@ -121,6 +122,6 @@ class MyHandler(SocketServer.BaseRequestHandler):
 
 
 
-myServer = SocketServer.ThreadingTCPServer(('',8001), MyHandler)
+myServer = SocketServer.ThreadingTCPServer((GAME_SERVER_IP,GAME_SERVER_PORT), MyHandler)
 print 'server started ...'
 myServer.serve_forever()
