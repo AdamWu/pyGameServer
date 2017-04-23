@@ -69,6 +69,8 @@ class MyHandler(SocketServer.BaseRequestHandler):
                                 if len(data) >= 2:
                                         dataLength = struct.unpack('!H', data[0:2])[0]
 
+                        time.sleep(1)
+
         # 处理数据
         def handleData(self, byteArray):
                 key = byteArray.ReadUShort()
