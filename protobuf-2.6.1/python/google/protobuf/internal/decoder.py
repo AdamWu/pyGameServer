@@ -164,8 +164,8 @@ def _SignedVarintDecoder(mask, result_type):
 # alternate implementations where the distinction is more significant
 # (e.g. the C++ implementation) simpler.
 
-_DecodeVarint = _VarintDecoder((1 << 64) - 1, long)
-_DecodeSignedVarint = _SignedVarintDecoder((1 << 64) - 1, long)
+_DecodeVarint = _VarintDecoder((1 << 64) - 1, int)
+_DecodeSignedVarint = _SignedVarintDecoder((1 << 64) - 1, int)
 
 # Use these versions for values which must be limited to 32 bits.
 _DecodeVarint32 = _VarintDecoder((1 << 32) - 1, int)
@@ -480,12 +480,12 @@ def StringDecoder(field_number, is_repeated, is_packed, key, new_default):
   """Returns a decoder for a string field."""
 
   local_DecodeVarint = _DecodeVarint
-  local_unicode = unicode
+  local_unicode = str
 
   def _ConvertToUnicode(byte_str):
     try:
       return local_unicode(byte_str, 'utf-8')
-    except UnicodeDecodeError, e:
+    except UnicodeDecodeError as e:
       # add more information to the error message and re-raise it.
       e.reason = '%s in field: %s' % (e, key.full_name)
       raise
