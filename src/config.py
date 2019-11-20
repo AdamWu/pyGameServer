@@ -1,14 +1,15 @@
 #-*-coding:utf-8-*-
 
-#--------http服务-------------------------
-LOGIN_SERVER_IP='127.0.0.1'
+#--------update server-------------------------
+UPDATE_SERVER_PORT=8000
+
+#--------login server-------------------------
 LOGIN_SERVER_PORT=8080
 
-#--------游戏主服务-------------------------
-GAME_SERVER_IP='127.0.0.1'
+#--------game server-------------------------
 GAME_SERVER_PORT=8001
 
-#--------游戏数据库-------------------------
+#--------mysql host--------------------------
 MYSQL_IP='127.0.0.1'
 MYSQL_PORT=3306  
 MYSQL_USER_NAME='root'

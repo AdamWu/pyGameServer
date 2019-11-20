@@ -14,7 +14,7 @@ class ByteArray:
             self.pos = newPos
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
 
     def ReadShort(self):
         newPos = self.pos + 2
@@ -23,7 +23,7 @@ class ByteArray:
             self.pos = newPos
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
 
     def ReadUShort(self):
         newPos = self.pos + 2
@@ -32,7 +32,7 @@ class ByteArray:
             self.pos = newPos
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
 
     def ReadInt(self):
         newPos = self.pos + 4
@@ -41,7 +41,7 @@ class ByteArray:
             self.pos = newPos
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
 
     def ReadFloat(self):
         newPos = self.pos + 4
@@ -50,7 +50,7 @@ class ByteArray:
             self.pos = newPos
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
 
     def ReadDouble(self):
         newPos = self.pos + 8
@@ -59,18 +59,18 @@ class ByteArray:
             self.pos = newPos
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
 
     def ReadString(self):
-        newPos=self.pos + 2
+        newPos=self.pos + 4
         if newPos<=self.length:
-            stringLength=struct.unpack('!H',self.data[self.pos:newPos])[0]
+            stringLength=struct.unpack('!i',self.data[self.pos:newPos])[0]
             form='!'+str(stringLength)+'s'
             value=struct.unpack(form,self.data[newPos:newPos+stringLength])
             self.pos=newPos+stringLength
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
 
     def ReadBytes(self):
         newPos=self.pos + 2
@@ -81,4 +81,4 @@ class ByteArray:
             self.pos=newPos+stringLength
             return value[0]
         else:
-            print 'index out of boundary'
+            print ('index out of boundary')
