@@ -1,0 +1,20 @@
+syntax = "proto2";//指定版本信息
+
+//坐标信息
+message Position
+{
+	required float x = 1;			//坐标x
+	required float y = 2;			//坐标y
+	required float z = 3;	        //坐标z
+}
+
+// 发送位置
+message PosReq{
+	required Position position = 1; 
+}
+
+message PosRes//登录请求回包数据
+{
+    required uint32 uid = 1; 
+	required Position position = 2; 
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";//指定版本信息
+
+//登录
+message Login
+{
+	required string UserName = 1;			//用户名
+
+}
+
+// 登录请求
+message LoginReq{	
+	required Login login = 1;
+}
+
+//登录请求回包数据
+message LoginRes
+{
+    required int32 msgCode = 1; 
+	required int32 userId = 2; 
+}
